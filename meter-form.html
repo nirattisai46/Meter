@@ -241,7 +241,7 @@ $('#pdf').onclick=async()=>{
  }finally{if(host)host.remove();btn.disabled=false}
 };
 // URL ของ Apps Script: ใส่ในช่องตั้งค่าในหน้ากรอกข้อมูล (จำไว้ในเครื่อง) หรือแก้ค่าสำรองด้านล่าง
-const DEFAULT_URL='PASTE_YOUR_WEB_APP_URL_HERE';
+const DEFAULT_URL='https://script.google.com/macros/s/AKfycbwTQ71sP5iT5aqpbfbRgLCCBmvepP3ILAgFOP8bl7XSydt6B5GazNkaXMiRyAjpDvk/exec';
 const UKEY='pea-sheet-url';
 const savedUrl=()=>{try{return localStorage.getItem(UKEY)||''}catch(e){return ''}};
 const getUrl=()=>(savedUrl()||DEFAULT_URL).trim();
